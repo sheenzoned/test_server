@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "projectName": "Project Name 1",
+    "isActive": true,
+    "flows": [
+      {
+        "id": 1,
+        "flowName": "Flow 1"
+      },
+      {
+        "id": 2,
+        "flowName": "Flow 2"
+      },
+      {
+        "id": 3,
+        "flowName": "Flow 3"
+      },
+      {
+        "id": 4,
+        "flowName": "Flow 4"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "projectName": "Project Name 2",
+    "isActive": true,
+    "flows": [
+      {
+        "id": 1,
+        "flowName": "Flow 1"
+      },
+      {
+        "id": 2,
+        "flowName": "Flow 2"
+      },
+      {
+        "id": 3,
+        "flowName": "Flow 3"
+      },
+      {
+        "id": 4,
+        "flowName": "Flow 4"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "projectName": "Project Name 3",
+    "isActive": false,
+    "flows": [
+      {
+        "id": 1,
+        "flowName": "Flow 1"
+      },
+      {
+        "id": 2,
+        "flowName": "Flow 2"
+      },
+      {
+        "id": 3,
+        "flowName": "Flow 3"
+      },
+      {
+        "id": 4,
+        "flowName": "Flow 4"
+      },
+      {
+        "id": 5,
+        "flowName": "Flow 5"
+      }
+    ]
+  }
+]

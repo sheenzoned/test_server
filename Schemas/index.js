@@ -1,4 +1,5 @@
 const userData = require("../MOCK_DATA.json");
+const projectData = require("../data/projects.json");
 const graphql = require("graphql");
 const {
   GraphQLObjectType,
@@ -9,6 +10,7 @@ const {
 } = graphql;
 
 const UserType = require("./TypeDefs/UserType");
+const ProjectType = require("./TypeDefs/ProjectType");
 
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",
@@ -25,6 +27,13 @@ const RootQuery = new GraphQLObjectType({
       args: {},
       resolve(parent, args) {
         return userData;
+      },
+    },
+    getAllProjects: {
+      type: new GraphQLList(ProjectType),
+      args: {},
+      resolve(parent, args) {
+        return projectData;
       },
     },
   },
