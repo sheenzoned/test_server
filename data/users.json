@@ -19,5 +19,12 @@
     "lastName": "Mazzilli",
     "email": "c@folks.com",
     "password": "123"
+  },
+  {
+    "id": 4,
+    "firstName": "Test",
+    "lastName": "User",
+    "email": "admin@folks.com",
+    "password": "admin123"
   }
 ]

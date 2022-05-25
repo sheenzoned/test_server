@@ -3,6 +3,8 @@
     "id": 1,
     "projectName": "Project Name 1",
     "isActive": true,
+    "isArchived": false,
+    "isFavorite": true,
     "flows": [
       {
         "id": 1,
@@ -26,6 +28,8 @@
     "id": 2,
     "projectName": "Project Name 2",
     "isActive": true,
+    "isArchived": false,
+    "isFavorite": true,
     "flows": [
       {
         "id": 1,
@@ -49,6 +53,8 @@
     "id": 3,
     "projectName": "Project Name 3",
     "isActive": false,
+    "isArchived": true,
+    "isFavorite": false,
     "flows": [
       {
         "id": 1,

@@ -1,65 +1,24 @@
-const userData = require("../MOCK_DATA.json");
-const projectData = require("../data/projects.json");
-const graphql = require("graphql");
-const {
-  GraphQLObjectType,
-  GraphQLSchema,
-  GraphQLInt,
-  GraphQLString,
-  GraphQLList,
-} = graphql;
+const { CREATE_USER } = require("./Mutations/User");
+const { GET_ALL_PROJECTS } = require("./Queries/Project");
+const { GET_ALL_USERS, GET_USER } = require("./Queries/User");
 
-const UserType = require("./TypeDefs/UserType");
-const ProjectType = require("./TypeDefs/ProjectType");
+const graphql = require("graphql");
+const { FAVORITE_PROJECT } = require("./Mutations/Project");
+const { GraphQLObjectType, GraphQLSchema } = graphql;
 
 const RootQuery = new GraphQLObjectType({
   name: "RootQueryType",
   fields: {
-    getUser: {
-      type: new GraphQLList(UserType),
-      args: { id: { type: GraphQLInt } },
-      resolve(parent, args) {
-        return userData;
-      },
-    },
-    getAllUsers: {
-      type: new GraphQLList(UserType),
-      args: {},
-      resolve(parent, args) {
-        return userData;
-      },
-    },
-    getAllProjects: {
-      type: new GraphQLList(ProjectType),
-      args: {},
-      resolve(parent, args) {
-        return projectData;
-      },
-    },
+    getUser: GET_USER,
+    getAllUsers: GET_ALL_USERS,
+    getAllProjects: GET_ALL_PROJECTS,
   },
 });
 const Mutation = new GraphQLObjectType({
   name: "Mutation",
   fields: {
-    createUser: {
-      type: UserType,
-      args: {
-        firstName: { type: GraphQLString },
-        lastName: { type: GraphQLString },
-        email: { type: GraphQLString },
-        password: { type: GraphQLString },
-      },
-      resolve(parent, args) {
-        userData.push({
-          id: userData.length + 1,
-          firstName: args.firstName,
-          lastName: args.lastName,
-          email: args.email,
-          password: args.password,
-        });
-        return args;
-      },
-    },
+    createUser: CREATE_USER,
+    favoriteProject: FAVORITE_PROJECT,
   },
 });
 

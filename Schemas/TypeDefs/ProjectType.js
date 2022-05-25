@@ -14,6 +14,8 @@ const ProjectType = new GraphQLObjectType({
     id: { type: GraphQLInt },
     projectName: { type: GraphQLString },
     isActive: { type: GraphQLBoolean },
+    isArchived: { type: GraphQLBoolean },
+    isFavorite: { type: GraphQLBoolean },
     flows: { type: new GraphQLList(FlowType) },
   }),
 });
