@@ -8,19 +8,27 @@
     "flows": [
       {
         "id": 1,
-        "flowName": "Flow 1"
+        "flowName": "Flow 1",
+        "scope": "Production",
+        "lastRun": "25 Seconds ago"
       },
       {
         "id": 2,
-        "flowName": "Flow 2"
+        "flowName": "Flow 2",
+        "scope": "Development",
+        "lastRun": "25 Seconds ago"
       },
       {
         "id": 3,
-        "flowName": "Flow 3"
+        "flowName": "Flow 3",
+        "scope": "Production",
+        "lastRun": "11 Minutes ago"
       },
       {
         "id": 4,
-        "flowName": "Flow 4"
+        "flowName": "Flow 4",
+        "scope": "Production",
+        "lastRun": "2 Hours ago"
       }
     ]
   },
@@ -33,19 +41,27 @@
     "flows": [
       {
         "id": 1,
-        "flowName": "Flow 1"
+        "flowName": "Flow 1",
+        "scope": "Development",
+        "lastRun": "25 Seconds ago"
       },
       {
         "id": 2,
-        "flowName": "Flow 2"
+        "flowName": "Flow 2",
+        "scope": "Development",
+        "lastRun": "25 Seconds ago"
       },
       {
         "id": 3,
-        "flowName": "Flow 3"
+        "flowName": "Flow 3",
+        "scope": "Production",
+        "lastRun": "11 Minutes ago"
       },
       {
         "id": 4,
-        "flowName": "Flow 4"
+        "flowName": "Flow 4",
+        "scope": "Production",
+        "lastRun": "1 Hour ago"
       }
     ]
   },
@@ -58,23 +74,33 @@
     "flows": [
       {
         "id": 1,
-        "flowName": "Flow 1"
+        "flowName": "Flow 1",
+        "scope": "Production",
+        "lastRun": "1 Hour ago"
       },
       {
         "id": 2,
-        "flowName": "Flow 2"
+        "flowName": "Flow 2",
+        "scope": "Production",
+        "lastRun": "1 Hour ago"
       },
       {
         "id": 3,
-        "flowName": "Flow 3"
+        "flowName": "Flow 3",
+        "scope": "Development",
+        "lastRun": "1 Hour ago"
       },
       {
         "id": 4,
-        "flowName": "Flow 4"
+        "flowName": "Flow 4",
+        "scope": "Production",
+        "lastRun": "26 Dec 2021 at 6:12pm"
       },
       {
         "id": 5,
-        "flowName": "Flow 5"
+        "flowName": "Flow 5",
+        "scope": "Development",
+        "lastRun": "26 Dec 2021 at 6:12pm"
       }
     ]
   }

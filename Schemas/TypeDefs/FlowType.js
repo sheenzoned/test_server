@@ -6,6 +6,8 @@ const FlowType = new GraphQLObjectType({
   fields: () => ({
     id: { type: GraphQLInt },
     flowName: { type: GraphQLString },
+    scope: { type: GraphQLString },
+    lastRun: { type: GraphQLString },
   }),
 });
 
