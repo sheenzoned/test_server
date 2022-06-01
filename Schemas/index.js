@@ -1,9 +1,12 @@
 const { CREATE_USER } = require("./Mutations/User");
 const { GET_ALL_PROJECTS } = require("./Queries/Project");
 const { GET_ALL_USERS, GET_USER } = require("./Queries/User");
+const {
+  FAVORITE_PROJECT,
+  CREATE_NEW_WORKFLOW,
+} = require("./Mutations/Project");
 
 const graphql = require("graphql");
-const { FAVORITE_PROJECT } = require("./Mutations/Project");
 const { GraphQLObjectType, GraphQLSchema } = graphql;
 
 const RootQuery = new GraphQLObjectType({
@@ -19,6 +22,7 @@ const Mutation = new GraphQLObjectType({
   fields: {
     createUser: CREATE_USER,
     favoriteProject: FAVORITE_PROJECT,
+    createNewWorkflow: CREATE_NEW_WORKFLOW,
   },
 });
 
